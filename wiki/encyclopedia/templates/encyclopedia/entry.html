@@ -7,6 +7,8 @@
 {% block body %}
     {{ content  |safe }}
     <p>
+    {%  if title != "Error"  %}
     <a style = "border: 1px solid black" href = "{% url 'edit' title %}">Edit Content </a>
+    {% endif  %}
     </p>
 {% endblock  %}
