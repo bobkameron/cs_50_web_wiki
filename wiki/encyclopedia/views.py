@@ -15,6 +15,7 @@ class SearchForm (forms.Form):
 class NewPage (forms.Form):
     title = forms.CharField ( label = "Title of Page" , 
     widget = forms.TextInput (attrs = {'placeholder': 'Enter Title Here'}) )
+    
     text_content = forms.CharField (# abel = "text_content"
     widget = forms.Textarea (attrs = {'placeholder':'Enter Entry Content Here'})
      )
